@@ -14,8 +14,18 @@ creator:
 ### Table of Contents
 
 - [What is a data type?](#data-type)
+	- [Two ways to Javascript - Code along](#running-javascript)
+	- [typeof](#typeof)
+	- [Numbers](#numbers)
+	- [Arithmetic Operators](#operators)
+	- [Special Number Operators](#special-operators)
+	- [Strings](#strings)
+	- [String Helper Methods](#string-helper-methods)
 - [String Concatentation and Coercion](#string-concat)
+	- [Converting Strings to Integers with parseInt() and parseFloat()](#string-to-int) 
+	- [NaN](#nan)
 - [Variables and Keywords - Codealong](#var-and-keywords)
+	- [Assignment Operators](#ass-ops) 
 - [Arrays](#arrays)
 - [Working with Arrays - Codealong](#working-with-arrays)
 - [Conclusion](#conclusion)
@@ -59,26 +69,23 @@ What this means is that being confident in working with these concepts criticall
 We'll elaborate on all of these - except Booleans, for now. We'll talk about how they behave in JavaScript, show you some helper methods to work with each type, and then practice these helper methods to manipulate data using JavaScript.
 
 
-#### What are we working with? Code along (20mins)
+## <a name="running-javascript">Two ways to Javascript - Code along (20mins)</a>
 
-We have two ways to run Javascript, and we're going to introduce two more ways to do it in Chrome next week.
 
-In your terminal run $`brew install node`
+We have two ways to run Javascript... by running a script or by entering the `node` environment in the Terminal. _We're going to introduce two more ways to do it in Chrome next week._
+
+#### Running Javascript from the `node` environment in the Terminal
+
+In your terminal run `brew install node`
 
 For this lesson, we're going to use the Node REPL in the terminal. You can do this in Cloud9 or in your Terminal if you have Node installed.
 
-**Cloud9**: Open your WDI_Remote workspace and open a Terminal window and run the binary `node`
-
-**Terminal**: Open your Terminal and run the binary `node`
-
-**First Way**
-This can be done in your terminal or in the bash window in Cloud9
-
-1. $`brew install node`
+1. $ `brew install node`
 2. Once you have node installed you can run $`node` and it will open up a JavaScript REPL
 3. ^C (control + C) twice to exit.
 
-**Second Way**
+
+#### Running a Javascript file
 
 1. Touch a file ending with `.js` like `test.js`
 2. Open that file and add the line `console.log('hello world!')`
@@ -89,7 +96,7 @@ Node is running the file test.js and the function console.log() will log whateve
 
 (Project non-specific binaries can be run from any directory!)
 
-#### typeof()
+#### <a name="typeof">typeof()</a>
 
 To get an idea of the type of data we're working with, we can use [`typeof()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof).  Let's try it out in the console with the following:
 
@@ -111,7 +118,7 @@ typeof 'hi there' === 'string';
 `typeof()` returns a string with the type of the operand, or expression of the object you're looking at.  
 
 
-#### Numbers
+#### <a name="numbers">Numbers</a>
 
 In more low-level languages, numbers are divided into two datatypes objects:
 
@@ -130,7 +137,7 @@ In more low-level languages, numbers are divided into two datatypes objects:
 Exercise: Ask node for the typeof() a whole number and then a decimal
 
 
-#### Arithmetic Operators
+#### <a name="operators">Arithmetic Operators</a>
 
 Operators are used to work with data in JavaScript. The standard [arithmetic operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#Arithmetic_operators) - that you've been learning since grade school - are supported, including addition, subtraction, modulus (or remainder) multiplication and so forth.  Check it out:
 
@@ -147,10 +154,12 @@ Operators are used to work with data in JavaScript. The standard [arithmetic ope
 6 * 2
 => 12
 ```
+<br>
+![Imgur](http://i.imgur.com/ylb6WX9.gif)
 
-Exercise: Take five minutes to play with your arithmetic operands in the Node repl. Try the operators we just covered but don't limit yourself to just single digits. See if you can break it or get unexpected behavior.
+**EXERCISE**: Take five minutes to play with your arithmetic operands in the Node repl. Try the operators we just covered but don't limit yourself to just single digits. See if you can break it or get unexpected behavior.
 
-#### Special Number Operators
+#### <a name="special-operators">Special Number Operators</a>
 
 We've seen that JavaScript allows us to perform simple arithmetic functions but what about more complex functions like square roots or exponents?
 
@@ -200,7 +209,7 @@ Math.floor(3.9999)
 => 3
 ```
 
-#### Strings
+#### <a name="strings">Strings</a>
 
 Strings are collections of letters and symbols known as *characters*, and we use them to deal with words and text in JavaScript. Strings are just another type of **value** in Javascript.
 
@@ -212,7 +221,7 @@ Strings are collections of letters and symbols known as *characters*, and we use
 
 SIDENOTE: double quotes vs single quotes?
 
-#### String helper methods
+#### <a name="string-helper-methods">String helper methods</a>
 
 To find the length of a string, access its [`length`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) property:
 
@@ -270,8 +279,10 @@ var secondWord = 'world'
 `${firstWord} ${secondWord}`
 => 'hello world'
 ```
+<br>
+![Imgur](http://i.imgur.com/ylb6WX9.gif)
 
-EXERCISE: Take 5 minutes to concatenate strings using both the `+` method and using string templates \`\` and string interpolation `${}`
+**EXERCISE**: Take 5 minutes to concatenate strings using both the `+` method and using string templates \`\` and string interpolation `${}`
 
 
 What happens if we add a string to a number? Take 15 seconds and try it in Node.
@@ -284,7 +295,7 @@ var b = a + '';         // implicit coercion
 var c = String( a );    // explicit coercion
 ```
 
-#### Converting Strings to Integers with parseInt() and parseFloat()
+#### <a name="string-to-int">Converting Strings to Integers with parseInt() and parseFloat()</a>
 
 You can convert a string to an integer using the built-in [`parseInt()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) function. This takes the base for the conversion as an optional second argument, which you should always provide:
 
@@ -311,10 +322,12 @@ You can also use the unary `+` operator to convert values to numbers:
 +'42';
 => 42
 ```
+<br>
+![Imgur](http://i.imgur.com/ylb6WX9.gif)
 
-EXERCISE: Let's take five minutes to use parseInt() and parseFloat() in node
+**EXERCISE**: Let's take five minutes to use `parseInt()` and `parseFloat()` in node
 
-#### NaN
+#### <a name="nan">NaN</a>
 
 The `parseInt()` and `parseFloat()` functions parse a string until they reach a character that isn't valid for the specified number format, then return the number parsed up to that point. However the '+' operator simply converts the string to `NaN` if there is any invalid character in it.
 
@@ -383,7 +396,7 @@ SIDENOTES: camelCase and \' ... But why?
 
 The main note to make here is that these variables should always have the `var` keyword and use `camelCase`
 
-#### Assignment Operators
+#### <a name="ass-ops">Assignment Operators</a>
 
 Values are assigned using `=`, and there are also compound assignment statements such as `+=` and `-=`:
 
@@ -521,8 +534,9 @@ typeof a[90];
 ```
 
 <br>
+![Imgur](http://i.imgur.com/ylb6WX9.gif)
 
-EXERCISE: 10 minutes 
+**EXERCISE**: 10 minutes 
 
 - Ask for the 90th value in your array. 
 - Ask for the first item in your array. 
