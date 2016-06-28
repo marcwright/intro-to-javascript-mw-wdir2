@@ -11,6 +11,15 @@ creator:
 
 # Data Types, Variables, and Arrays
 
+### Table of Contents
+
+- [What is a data type?](#data-type)
+- [String Concatentation and Coercion](#string-concat)
+- [Variables and Keywords - Codealong](#var-and-keywords)
+- [Arrays](#arrays)
+- [Working with Arrays - Codealong](#working-with-arrays)
+- [Conclusion](#conclusion)
+
 ### Objectives
 *After this lesson, students will be able to:*
 
@@ -29,7 +38,7 @@ creator:
 - Be comfortable with a text editor
 
 
-## What is a data type? Intro (5 mins)
+## <a name="data-type">What is a data type? Intro (5 mins)</a>
 
 From the [Wikipedia](https://en.wikipedia.org/wiki/Data_type):
 
@@ -225,7 +234,7 @@ Strings have other [methods](https://developer.mozilla.org/en-US/docs/Web/JavaSc
 => 'HELLO'
 ```
 
-# String Concatentation and Coercion
+# <a name="string-concat">String Concatentation and Coercion</a>
 
 What if we want to turn two or more strings into one string?
 
@@ -336,7 +345,7 @@ JavaScript distinguishes between:
 - `null` a value that indicates a deliberate non-value
 - `undefined` that indicates an uninitialized value — that is, a value hasn't even been assigned yet
 
-## Variables and Keywords - Codealong (10 mins)
+## <a name="var-and-keywords">Variables and Keywords - Codealong (10 mins)</a>
 
 Variables are used to store data types into the memory of the computer so that they can be referenced later.
 
@@ -408,7 +417,7 @@ misunderstand you.
 ```
 
 
-## Arrays - Demo (5 mins)
+## <a name="arrays">Arrays - Demo (5 mins)</a>
 
 Unfortunately, strings and numbers are not enough for most programming purposes.
 What is needed are collections of data that we can use efficiently, Arrays.
@@ -449,7 +458,7 @@ friend.length
 ```
 
 
-## Working with Arrays - Codealong (15 mins)
+## <a name="working-with-arrays">Working with Arrays - Codealong (15 mins)</a>
 
 Using the JavaScript Keyword `new`, is one way of creating arrays:
 
@@ -541,7 +550,7 @@ Arrays come with a number of methods. Here's a list of some popular helpers:
 
 Remember, though, you'll never remember _every_ method.  Explore the the [full documentation for array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and other helper methods given to you for particular objects.
 
-## Conclusion (5 mins)
+## <a name="conclusion">Conclusion (5 mins)</a>
 
 - Describe use cases of different 'data types'.
 - Why is iterating important when working with stored data?
