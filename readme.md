@@ -74,6 +74,9 @@ We'll elaborate on all of these - except Booleans, for now. We'll talk about how
 
 We have two ways to run Javascript... by running a script or by entering the `node` environment in the Terminal. _We're going to introduce two more ways to do it in Chrome next week._
 
+**NOTE**... Once you open my workspace, click on the green bar at the top. I'll grant you guys read/write access to my Cloud9 workspace so that you can see my Terminal. Be sure to practice the exercises in your `Immediate (Javascript)` tab, not my Terminal:)
+
+
 #### Running Javascript from the `node` environment in the Terminal
 
 In your terminal run `brew install node`
