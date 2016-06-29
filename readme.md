@@ -4,7 +4,7 @@ type: lesson
 duration: '1:25'
 creator:
     name: Alex Chin, Gerry Mathe
-    Adapted for WDIr: Colin Hart
+    Adapted for WDIr: Colin Hart, Marc Wright
     city: London
     competencies: Programming    
 ---
@@ -133,8 +133,10 @@ In more low-level languages, numbers are divided into two datatypes objects:
 ```js
 2.718, 3.14, .5, .25, etc
 ```
+<br>
+![Imgur](http://i.imgur.com/ylb6WX9.gif)
 
-Exercise: Ask node for the typeof() a whole number and then a decimal
+**EXERCISE**: Ask node for the `typeof()` a whole number and then a decimal
 
 
 #### <a name="operators">Arithmetic Operators</a>
@@ -157,13 +159,13 @@ Operators are used to work with data in JavaScript. The standard [arithmetic ope
 <br>
 ![Imgur](http://i.imgur.com/ylb6WX9.gif)
 
-**EXERCISE**: Take five minutes to play with your arithmetic operands in the Node repl. Try the operators we just covered but don't limit yourself to just single digits. See if you can break it or get unexpected behavior.
+**EXERCISE**: Take 5 minutes to play with your arithmetic operands in the Node repl. Try the operators we just covered but don't limit yourself to just single digits. See if you can break it or get unexpected behavior.
 
 #### <a name="special-operators">Special Number Operators</a>
 
 We've seen that JavaScript allows us to perform simple arithmetic functions but what about more complex functions like square roots or exponents?
 
-Exercise: Take 5 minutes to look at the [Math documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) and pick a function to quickly explain to the class. We'll popcorn around the room each person will get 30 seconds to explain what their function is/does. Don't worry if you chose the same one as someone else. Repetition leads to retention!
+
 
 
 * Taking a number to some `power`? Then just use `Math.pow`
@@ -209,6 +211,11 @@ Math.floor(3.9999)
 => 3
 ```
 
+<br>
+![Imgur](http://i.imgur.com/ylb6WX9.gif)
+
+**EXERCISE**: Take 5 minutes to look at the [Math documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) and pick a function to quickly explain to the class. We'll popcorn around the room each person will get 30 seconds to explain what their function is/does. Don't worry if you chose the same one as someone else. Repetition leads to retention!
+
 #### <a name="strings">Strings</a>
 
 Strings are collections of letters and symbols known as *characters*, and we use them to deal with words and text in JavaScript. Strings are just another type of **value** in Javascript.
@@ -219,7 +226,7 @@ Strings are collections of letters and symbols known as *characters*, and we use
 '123'
 ```
 
-SIDENOTE: double quotes vs single quotes?
+**SIDENOTE**: double quotes vs single quotes?
 
 #### <a name="string-helper-methods">String helper methods</a>
 
@@ -243,7 +250,7 @@ Strings have other [methods](https://developer.mozilla.org/en-US/docs/Web/JavaSc
 => 'HELLO'
 ```
 
-# <a name="string-concat">String Concatentation and Coercion</a>
+## <a name="string-concat">String Concatentation and Coercion</a>
 
 What if we want to turn two or more strings into one string?
 
